@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
 
+@class GADBannerView;
+
 @interface ViewController : UIViewController
 {
     SystemSoundID Button1;
@@ -16,6 +18,7 @@
 
 -(IBAction)Button1Sound:(id)sender;
 
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 @end
 
