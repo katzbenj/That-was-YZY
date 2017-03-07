@@ -20,6 +20,8 @@
 		4B3BDD8F1E35951F00358C9F /* sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4B3BDD8E1E35951F00358C9F /* sound.m4a */; };
 		4B3BDD901E35951F00358C9F /* sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4B3BDD8E1E35951F00358C9F /* sound.m4a */; };
 		4B3BDD911E35951F00358C9F /* sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4B3BDD8E1E35951F00358C9F /* sound.m4a */; };
+		891C451C1E6E560F000FFC7C /* YZY_button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 891C451A1E6E560F000FFC7C /* YZY_button.jpeg */; };
+		891C451D1E6E560F000FFC7C /* YZY_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 891C451B1E6E560F000FFC7C /* YZY_splash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		4B3BDD7F1E35920100358C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B3BDD8C1E35925F00358C9F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4B3BDD8E1E35951F00358C9F /* sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.m4a; sourceTree = "<group>"; };
+		891C451A1E6E560F000FFC7C /* YZY_button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YZY_button.jpeg; sourceTree = "<group>"; };
+		891C451B1E6E560F000FFC7C /* YZY_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YZY_splash.png; sourceTree = "<group>"; };
 		A8C669224ABCCDFB3EEAB612 /* Pods-That-was-YZY1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-That-was-YZY1.release.xcconfig"; path = "Pods/Target Support Files/Pods-That-was-YZY1/Pods-That-was-YZY1.release.xcconfig"; sourceTree = "<group>"; };
 		F129FB51BC6A73B73025AFC2 /* Pods-That-was-YZY1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-That-was-YZY1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-That-was-YZY1/Pods-That-was-YZY1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +144,8 @@
 		4B3BDD581E35920100358C9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				891C451A1E6E560F000FFC7C /* YZY_button.jpeg */,
+				891C451B1E6E560F000FFC7C /* YZY_splash.png */,
 				4B3BDD8E1E35951F00358C9F /* sound.m4a */,
 				4B3BDD591E35920100358C9F /* main.m */,
 			);
@@ -284,9 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3BDD681E35920100358C9F /* LaunchScreen.storyboard in Resources */,
+				891C451D1E6E560F000FFC7C /* YZY_splash.png in Resources */,
 				4B3BDD651E35920100358C9F /* Assets.xcassets in Resources */,
 				4B3BDD8F1E35951F00358C9F /* sound.m4a in Resources */,
 				4B3BDD631E35920100358C9F /* Main.storyboard in Resources */,
+				891C451C1E6E560F000FFC7C /* YZY_button.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +344,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		ACA87E650F6C245CB5E7AFF3 /* [CP] Copy Pods Resources */ = {

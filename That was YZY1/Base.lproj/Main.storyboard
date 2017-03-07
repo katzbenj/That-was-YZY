@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,13 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RO0-fM-GCk">
-                                <rect key="frame" x="37" y="183" width="300" height="300"/>
-                                <state key="normal" image="Yeezy pic"/>
-                                <connections>
-                                    <action selector="Button1Sound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ci-ci-BIN"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2M-Cl-RfC" customClass="GADBannerView">
                                 <rect key="frame" x="27" y="617" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,13 +30,24 @@
                                     <constraint firstAttribute="height" constant="50" id="M0U-le-B00"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RO0-fM-GCk">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <state key="normal" image="YZY_button.jpeg"/>
+                                <connections>
+                                    <action selector="Button1Sound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ci-ci-BIN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RO0-fM-GCk" secondAttribute="bottom" constant="184" id="5Cx-mA-j4v"/>
+                            <constraint firstItem="RO0-fM-GCk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="Bwc-dK-ioD"/>
+                            <constraint firstItem="RO0-fM-GCk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="163" id="JWa-nP-V87"/>
                             <constraint firstItem="g2M-Cl-RfC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oxv-Hf-PQM"/>
                             <constraint firstItem="RO0-fM-GCk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ufb-ue-SQl"/>
                             <constraint firstItem="RO0-fM-GCk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xqq-7I-9cq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g2M-Cl-RfC" secondAttribute="bottom" id="u1o-5h-5S9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RO0-fM-GCk" secondAttribute="trailing" constant="22" id="uha-5x-nWm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -55,6 +60,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Yeezy pic" width="300" height="300"/>
+        <image name="YZY_button.jpeg" width="608" height="857"/>
     </resources>
 </document>
